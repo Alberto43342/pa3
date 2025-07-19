@@ -1,22 +1,24 @@
 package gatodev.pa4web.DTO;
 
 import gatodev.pa4web.models.Academy;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import gatodev.pa4web.models.League;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
-@Builder
-@ToString
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class FighterDTO {
     private Integer id;
+    private String dni;
     private String fullName;
     private Integer age;
-    private String weight;
+    private Double weight;
     private String gender;
-    private String rank;
-    private String modality;
-    private Academy academy;
+    private String rank;         
+    private String modality;     
+    private String photo;        
+    private Academy academy;    
+    private League league;      
 }
